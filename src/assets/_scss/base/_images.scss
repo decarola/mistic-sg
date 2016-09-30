@@ -1,8 +1,4 @@
-img {
-  max-width: 100%;
-  height: auto;
-}
-
+// figure
 figure {
   display: inline-block;
   margin: 1rem 0;
@@ -36,5 +32,26 @@ figcaption {
   &:before {
     content: "📷";
     margin-right: 0.4rem;
+  }
+}
+
+// gallery thumb
+.image-thumb {
+  display: block;
+  margin: 0;
+  width: 15rem;
+  height: 15rem;
+  border: solid 1px $c-gray;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    margin-top: -50%;
+    display: block;
   }
 }

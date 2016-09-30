@@ -1,0 +1,33 @@
+.grid-3,
+.grid-4 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col {
+  padding: .5rem;
+   
+  .grid-3 > & {
+    flex: 50%;
+
+    @media screen and (min-width: $v-mobile-landscape) {
+      flex: 33.33%;
+
+      &.colspan-2 {
+        flex: 66.66%;
+      }
+    }
+  }
+
+  .grid-4 > & {
+    flex: 50%;
+
+    @media screen and (min-width: $v-mobile-landscape) {
+      flex: 25%;
+
+      &.colspan-2 {
+        flex: 50%;
+      }
+    }
+  }
+}

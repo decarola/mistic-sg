@@ -101,3 +101,9 @@ textarea {
 select[multiple] {
   vertical-align:top;
 }
+
+// images
+img {
+  max-width: 100%;
+  height: auto;
+}
