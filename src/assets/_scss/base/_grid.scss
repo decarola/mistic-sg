@@ -1,32 +1,88 @@
-.grid-3,
-.grid-4 {
-  display: flex;
-  flex-flow: row wrap;
-}
+.no-flex,
+.no-js {
 
-.col {
-  padding: .5rem;
-   
-  .grid-3 > & {
-    flex: 50%;
+  .grid-3,
+  .grid-4 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
 
-    @media screen and (min-width: $v-mobile-landscape) {
-      flex: 33.33%;
+  .col {
+    padding: .5rem;
+    flex: 1;
 
-      &.colspan-2 {
-        flex: 66.66%;
+    .no-gutter > & {
+      padding: 0;
+    }
+     
+    .grid-3 > & {
+      flex: 50%;
+      flex-grow: 1;
+
+      @media screen and (min-width: $v-mobile-landscape) {
+        flex: 33.33%;
+
+        &.colspan-2 {
+          flex: 66.66%;
+        }
+      }
+    }
+
+    .grid-4 > & {
+      flex: 50%;
+      flex-grow: 1;
+
+      @media screen and (min-width: $v-mobile-landscape) {
+        flex: 25%;
+        max-width: 25%;
+
+        &.colspan-2 {
+          flex: 50%;
+        }
       }
     }
   }
+}
 
-  .grid-4 > & {
-    flex: 50%;
+.flex {
+  .grid-3,
+  .grid-4 {
+    width: 100%;
+  }
 
-    @media screen and (min-width: $v-mobile-landscape) {
-      flex: 25%;
+  .col {
+    padding: .5rem;
+    flex: 1;
 
-      &.colspan-2 {
-        flex: 50%;
+    .no-gutter > & {
+      padding: 0;
+    }
+     
+    .grid-3 > & {
+      flex: 50%;
+      flex-grow: 1;
+
+      @media screen and (min-width: $v-mobile-landscape) {
+        flex: 33.33%;
+
+        &.colspan-2 {
+          flex: 66.66%;
+        }
+      }
+    }
+
+    .grid-4 > & {
+      flex: 50%;
+      flex-grow: 1;
+
+      @media screen and (min-width: $v-mobile-landscape) {
+        flex: 25%;
+        max-width: 25%;
+
+        &.colspan-2 {
+          flex: 50%;
+        }
       }
     }
   }

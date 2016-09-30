@@ -12,7 +12,7 @@ figure {
   }
 
   // when it's under a link
-  a > & {
+  .figure-zoom > & {
     position: relative;
     &:hover:before {
       content: "🔍";
@@ -36,22 +36,25 @@ figcaption {
 }
 
 // gallery thumb
-.image-thumb {
+.thumb {
   display: block;
-  margin: 0;
-  width: 15rem;
-  height: 15rem;
-  border: solid 1px $c-gray;
   position: relative;
   overflow: hidden;
 
   img {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    margin-left: -50%;
-    margin-top: -50%;
-    display: block;
+    max-width: 110%;
+    width: 110%;
+    margin-left: -5%;
   }
+}
+
+.thumb__claim {
+  background-color: $c-dark-gray;
+  bottom: 0;
+  color: $c-white;
+  margin-bottom: 0;
+  padding: 0.2rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
