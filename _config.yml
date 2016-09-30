@@ -31,7 +31,7 @@ keywords: KEYWORDS
 author: AUTHOR NAME
 description: DESCRIPTION
 language: en
-baseurl:
+baseurl: /mistic-sg
 destination: _site
 sass:
   sass_dir: src/assets/_scss #[generate Product styles]
