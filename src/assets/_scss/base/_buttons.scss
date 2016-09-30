@@ -1,120 +1,80 @@
-a {
-  color: $blue;
-  text-decoration: underline;
-  cursor: pointer;
-  
-  &:hover,
-  &:focus {
-    color: $darkest-blue;
-  }
-}
-a.alt {
-  color: $red;
-  
-  &:hover,
-  &:focus {
-    color: $darkest-red;
-  }
-}
-.button {
-  position: relative;
+
+%btn,
+.btn {
+  background-color: $c-primary-teal;
+  border-radius: 4px;
+  border: solid 2px $c-primary-teal;
+  color: white;
   display: inline-block;
-  vertical-align: middle;
-  margin: 0 $small-pad/2 0 0;
-  padding: $base-pad;
-  border: none;
-  border-radius: $base-rad;
-  cursor: pointer;
-  background-color: $blue;
-  color: $white;
-  text-shadow: 0 1px 0 transparentize($black, .8);
-  line-height: 1;
-  text-align: center;
+  padding: .7rem 1.2rem;
   text-decoration: none;
-  @include transition(all, $base-timing, $base-duration);
+  white-space: nowrap;
 
   &:hover,
   &:focus {
-    background: $darkest-blue;
-    color: $white;
+    background-color: darken($c-primary-teal, 15%);
+    border-color: darken($c-primary-teal, 15%);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: lighten($c-primary-teal, 5%);
+    border-color: lighten($c-primary-teal, 5%);
+  }
+
+  &.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
   }
 }
-.button.alt {
-  background: $red;
-  color: $white;
-  
+
+%btn--outline,
+.btn--outline {
+  background-color: white;
+  color: $c-primary-teal;
+
   &:hover,
   &:focus {
-    background: $darkest-red;
-    color: $white;
+    background-color: white;
+    border-color: $c-gray;
+    color: $c-gray;
+  }
+
+  &:active {
+    background-color: white;
+    border-color: $c-dark-gray;
+    color: $c-dark-gray;
   }
 }
-.button-icon {
-  @extend .button;
-  
-  &:before {
-    @extend .icon;
-    margin-right: $small-pad;
+
+%btn--big,
+.btn--big {
+  padding: 1rem 1.5rem .8rem;
+  font-size: 1.2rem;
+}
+
+%btn--small,
+.btn--small {
+  padding: .3rem .6rem .2rem;
+  font-size: .8rem;
+  line-height: 1.2rem;
+}
+
+%btn--gray,
+.btn--gray {
+  background-color: $c-light-gray;
+  border-color: $c-light-gray;
+  color: $c-gray;
+
+  &:hover,
+  &:focus {
+    color: white;
   }
 }
-.button-group {
-  @include display(flex);
-  @include clearfix;
-  margin: 0 $small-pad/2 0 0;
-  
-  .button {
-    display: block;
-    float: left;
-    margin: 0;
-    border-radius: 0;
-    border-right: $base-border;
-    
-    &:first-child {
-      border-top-left-radius: $base-rad;
-      border-bottom-left-radius: $base-rad;
-    }
-    &:last-child {
-      border-top-right-radius: $base-rad;
-      border-bottom-right-radius: $base-rad;
-    }
-  }
-}
-.button_animated {
-  overflow: hidden;
-  padding-right: 0;
-  
-  .visible-content,
-  .hidden-content {
-    @include transition(right, $base-timing, $base-duration);
-  }
-  .visible-content {
-    position: relative;
-    left: auto;
-    right: 0;
-    margin-right: $base-pad;
-  }
-  .hidden-content {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: auto;
-    right: -100%;
-    margin-top: -$base-font-size/2;
-  }
-  &:hover {
-    .visible-content {
-      right: 100%;
-    }
-    
-    .hidden-content {
-      right: 0;
-    }
-  }
-}
-.button_disabled {
-  pointer-events: none;
-  background: $light-grey;
-}
-.button_block {
-  display: block;
-}
+
+// .btn--white {
+//  background-color: white;
+//  border-color: $c-medium-grey;
+//  color: $c-medium-grey;
+// }

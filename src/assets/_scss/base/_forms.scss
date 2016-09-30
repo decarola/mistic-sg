@@ -1,87 +1,106 @@
-input,
-label,
-select,
-button,
-textarea
-{
-  margin: 0;
+form ol,
+form ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+fieldset {
+  display: block;
   border: 0;
   padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-  white-space: normal;
-  background: none;
-  line-height: 1;
-  
-  /* Browsers have different default form fonts */
-  font-size: $base-font-size;
-  font-family: $base-font-family;
+  margin: 0 0 1.4rem;
+  width: 100%;
+  max-width: 10rem;
 }
 
-// Text Inputs
-// input[type=date],
-// input[type=datetime],
-// input[type=datetime-local],
-// input[type=email],
-// input[type=month],
-// input[type=number],
-// input[type=password],
-// input[type=range],
-// input[type=search],
-// input[type=tel],
-// input[type=text],
-// input[type=time],
-// input[type=url],
-// input[type=week] {
-// }
-
-// Button Controls
-// input[type=checkbox],
-// input[type=radio] {
-// }
-
-// File Uploads
-// input[type=file] {
-// }
-
-// Search Input
-input[type=search] {
-  // Make webkit render the search input like a normal text field
-  -webkit-appearance: textfield; 
-  -webkit-box-sizing: content-box;
+legend {
+  margin-bottom: 1em;
 }
 
-::-webkit-search-decoration {
-  display: none; // Turn off the recent search for webkit. 
-}
+/*
+   Input and buttons
+   ========================================================================== */
 
-// Buttons
 button,
-input[type="reset"],
-input[type="button"],
 input[type="submit"] {
-  /* Fix IE7 display bug */
-  overflow: visible;
-  width: auto;
+  @extend %btn;
+  font-size: 1rem;
+  line-height: $base-line-height;
 }
 
-// IE8 and FF freak out if this rule is within another selector
-::-webkit-file-upload-button {
-  padding: 0;
-  border: 0;
-  background: none;
+textarea,
+select,
+input[type='url'],
+input[type='email'],
+input[type='password'],
+input[type='search'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='number'],
+input[type='text'] {
+  display: block;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: $base-line-height  * 1rem;
+  padding: 0.5rem;
+  border: solid 1px $c-gray;
+
+  @media screen and (min-width: $v-tablet) {
+    min-width: 20rem;
+  }
+
+  .is-wrong & {
+    border-color: red;
+  }
+
+  .is-valid & {
+    border-color: green;
+  }
 }
 
-// Textarea
 textarea {
-  vertical-align:top;
-  overflow: auto; // Turn off scroll bars in IE unless needed
+  
 }
 
-// Selects
-// select {
-// }
+select {
+  min-width: 150px;
+  text-overflow: "";
+}
 
-select[multiple] {
-  vertical-align:top;
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  line-height: $base-line-height * 1rem;
+  margin-right: .5rem;
+  margin-top: -4px;
+  vertical-align: middle;
+}
+
+/*
+   Labels and containers
+   ========================================================================== */
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  line-height: $base-line-height * 1rem;
+  margin-bottom: 0.4rem;
+  min-width: 6rem;
+}
+
+.field-container {
+  margin-bottom: 2rem;
+}
+
+.field-note {
+  color: $c-light-gray;
+  display: block;
+  margin-top: 0.4rem;
+
+  .is-wrong & {
+    color: red;
+  }
 }

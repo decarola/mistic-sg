@@ -1,7 +1,44 @@
 ---
 ---
 
-<blockquote>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-  <footer><a href=""></a></footer>
-</blockquote>
+<form action="#" method="post">
+  <fieldset>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name" />
+  </fieldset>
+
+  <fieldset>
+    <label for="radio-choice-1">Choice 1</label>
+     <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1">
+
+    <label for="radio-choice-2">Choice two</label>
+    <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2">
+  </fieldset>
+
+  <fieldset>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail" />
+  </fieldset>
+    
+  <fieldset>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </fieldset>
+
+  <fieldset>
+    <label for="select-choice">Select Dropdown Choice:</label>
+    <select name="select-choice" id="select-choice">
+      <option value="Choice 1">Choice 1</option>
+      <option value="Choice 2">Choice 2</option>
+      <option value="Choice 3">Choice 3</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <label for="checkbox">Checkbox:</label>
+    <input type="checkbox" name="checkbox">
+  </fieldset>
+
+  <input type="submit" name="" value="Send it!">
+  <input type="reset" name="" value="Reset" class="btn btn--small btn--outline">
+</form>

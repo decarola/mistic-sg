@@ -38,3 +38,66 @@ td {
 	vertical-align: baseline;
 	background: transparent;
 }
+
+// form
+input,
+label,
+select,
+button,
+textarea
+{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  
+  /* Browsers have different default form fonts */
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+}
+
+// Search Input
+input[type=search] {
+  // Make webkit render the search input like a normal text field
+  -webkit-appearance: textfield; 
+  -webkit-box-sizing: content-box;
+}
+
+::-webkit-search-decoration {
+  display: none; // Turn off the recent search for webkit. 
+}
+
+// Buttons
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto;
+}
+
+// IE8 and FF freak out if this rule is within another selector
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+// Textarea
+textarea {
+  vertical-align:top;
+  overflow: auto; // Turn off scroll bars in IE unless needed
+}
+
+// Selects
+// select {
+// }
+
+select[multiple] {
+  vertical-align:top;
+}
