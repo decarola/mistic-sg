@@ -3,10 +3,38 @@ img {
   height: auto;
 }
 
-// figure {
-//  img {
-//  }
-// }
+figure {
+  display: inline-block;
+  margin: 1rem 0;
 
-// figcaption {
-// }
+  img {
+    display: block;
+  }
+
+  @media screen and (min-width: $v-mobile) {
+    margin: 2rem 0;
+  }
+
+  // when it's under a link
+  a > & {
+    position: relative;
+    &:hover:before {
+      content: "🔍";
+      position: absolute;
+      top: .5rem;
+      left: .5rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+figcaption {
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  color: $c-gray;
+
+  &:before {
+    content: "📷";
+    margin-right: 0.4rem;
+  }
+}

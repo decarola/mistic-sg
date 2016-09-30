@@ -1,16 +1,25 @@
 ul,
 ol {
-	margin: ($spacing-unit / 2);
+  padding-left: 1rem;
 }
 
 li {
+  margin-bottom: .5rem;
+}
 
-	&:not(:last-child) {
-		margin-bottom: ($spacing-unit / 2);
-	}
+.list-feed {
+  list-style: none;
+  padding-left: 0;
 
-	> ol,
-	> ul {
-		margin-bottom: 0;
-	}
+  li {
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: $v-mobile) {
+      margin-bottom: 2.5rem;
+    }
+
+    @media screen and (min-width: $v-mobile-landscape) {
+      margin-bottom: 3rem;
+    }
+  }
 }
