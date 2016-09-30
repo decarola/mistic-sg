@@ -3,28 +3,27 @@
 
   .grid-3,
   .grid-4 {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
+    width: 100%;
+    border: solid 1px red;
   }
 
   .col {
     padding: .5rem;
-    flex: 1;
+    width: 50%;
+    float: left;
 
     .no-gutter > & {
       padding: 0;
     }
      
     .grid-3 > & {
-      flex: 50%;
-      flex-grow: 1;
+      width: 50%;
 
       @media screen and (min-width: $v-mobile-landscape) {
-        flex: 33.33%;
+        width: 33.33%;
 
         &.colspan-2 {
-          flex: 66.66%;
+          width: 66.66%;
         }
       }
     }
@@ -48,7 +47,9 @@
 .flex {
   .grid-3,
   .grid-4 {
-    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
   }
 
   .col {
