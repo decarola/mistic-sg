@@ -1,0 +1,54 @@
+<aside class="sg-toc">
+  <a href="javascript(0);" class="sg-maximize-btn"><i class="icon ion-ios-arrow-back"></i> <span>Hide</span></a>  
+  <a href="{{ site.baseurl }}/index.html" class="toc-head">
+    <div class="toc-head_icon"><img src="{{ site.baseurl }}/styleguide/branding/png/styleguide-64x64.png"></div>
+    <h1 class="toc-head_title">{{ site.sg_title }}</h1>
+  </a>
+  <ul>
+    <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Overview</a></li>
+  </ul>
+  {% assign get-started = site.docs | where: 'type', 'help' | sort: 'name' %}
+  <div class="toc-group">
+    <h6 class="toc-group_title">Get Started</h6>
+    <ul>
+    {% for doc in get-started %}
+    <li>
+      <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  </div>
+  {% assign branding = site.docs | where: 'type', 'branding' | sort: 'name' %}
+  <div class="toc-group">
+    <h6 class="toc-group_title">Branding</h6>
+    <ul>
+    {% for doc in branding %}
+    <li>
+      <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  </div>
+  {% assign patterns = site.docs | where: 'layout', 'doc' | sort: 'name' %}
+  <div class="toc-group">
+    <h6 class="toc-group_title">UI Components</h6>
+    <ul>
+      {% for pattern in patterns %}
+      <li> 
+        <a href="{{ site.baseurl }}{{ pattern.url }}"{% if pattern.url == page.url %} class="active"{% endif %}>{{ pattern.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% assign examples = site.docs | where: 'layout', 'example' | sort: 'name' %}
+  <div class="toc-group">
+    <h6 class="toc-group_title">Example Pages</h6>
+    <ul>
+      {% for example in examples %}
+      <li> 
+        <a href="{{ site.baseurl }}{{ example.url }}"{% if example.url == page.url %} class="active"{% endif %}>{{ example.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</aside>

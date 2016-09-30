@@ -1,0 +1,28 @@
+
+// Colors
+$c-lightBlue: 		#8388F8;
+$c-blue: 			#230E72;
+$c-white: 			#fff;
+
+$text-color: 		#1b0627;
+$background-color: 	#fdfdfd;
+
+$c-gray:			darken(#ddd, 20%);
+$c-light-gray:		lighten(#ddd, 5%);
+$c-dark-gray:		darken($c-gray, 20%);
+
+// Fonts
+$base-font-family: 	'Roboto', sans-serif;
+$base-font-size: 	16px;
+$base-font-weight: 	400;
+$strong-font-weight:900;
+$small-font-size: 	$base-font-size * 0.875;
+$base-line-height: 	1.5;
+
+// Layout and responsive viewports
+$spacing-unit: 		1.875rem;
+
+$v-mobile: 			320px;
+$v-mobile-landscape:550px;
+$v-tablet: 			768px;
+$v-desktop: 		960px;

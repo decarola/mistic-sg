@@ -1,0 +1,16 @@
+ul,
+ol {
+	margin: ($spacing-unit / 2);
+}
+
+li {
+
+	&:not(:last-child) {
+		margin-bottom: ($spacing-unit / 2);
+	}
+
+	> ol,
+	> ul {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,28 @@
+.welcome {
+	@media screen and (min-width: $v-mobile-landscape) {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+	}
+}
+.welcome__title {
+	font-size: 150%;
+	text-transform: none;
+}
+
+.welcome__abstract {
+
+	@media screen and (min-width: $v-mobile-landscape) {
+		flex: 1 60%;
+	}
+}
+
+.welcome__mainimg {
+	margin: $spacing-unit 0;
+
+	@media screen and (min-width: $v-mobile-landscape) {
+		flex: 2 40%;
+		margin-top: 0;
+		padding-left: 1rem;
+	}
+}

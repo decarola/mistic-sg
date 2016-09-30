@@ -1,0 +1,14 @@
+.footer {
+	border-top: solid 1px $c-blue;
+	margin-top: ($spacing-unit * 1.5);
+	padding: ($spacing-unit * 1.5) 0;
+
+	background-color: $c-blue;
+
+	a {
+		color: $c-white;
+	}
+}
+
+.footer__nav {
+}

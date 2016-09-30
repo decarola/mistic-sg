@@ -1,0 +1,9 @@
+.l-wrapper {
+	width: 95%;
+	margin: 0 auto;
+
+	@media screen and (min-width: $v-mobile-landscape) {
+		width: 90%;
+		max-width: 48rem;
+	}
+}

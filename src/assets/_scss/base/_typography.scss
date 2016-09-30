@@ -1,0 +1,96 @@
+// Defaults
+body {
+  color: $text-color;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+
+  @media screen and (min-width: $v-tablet) {
+    font-size: $base-font-size * 1.125;
+  }
+
+  @media screen and (min-width: $v-desktop) {
+    font-size: $base-font-size * 1.25;
+  }
+}
+
+a {
+  color: $c-blue;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+em,
+i { 
+  font-style: italic;
+}
+
+strong {
+  font-weight: $strong-font-weight;
+}
+
+small,
+%small {
+  font-size: $small-font-size;
+}
+
+// Heading
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-font-family;
+  font-weight: $strong-font-weight;
+  letter-spacing: .2pt;
+  text-transform: uppercase;
+  color: $c-blue;
+}
+
+h1,
+h2 {
+  line-height: 1.1;
+}
+
+h3,
+h4 {
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 300%;
+  margin: 3rem 0;
+
+  @media screen and (min-width: $v-tablet) {
+    margin: 2rem 0;
+  }
+}
+
+h2 {
+  font-size: 230%;
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: 200%;
+  margin: 1rem 0;
+}
+
+h4 {
+  font-size: 170%;
+  margin: .5rem 0;
+}
+
+h5 {
+  font-size: 120%;
+  margin: 0;
+}

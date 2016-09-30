@@ -1,0 +1,23 @@
+.main {
+
+}
+
+.main__title {
+	color: $c-blue;
+
+	.main__subtitle + & {
+		margin-top: 1rem;
+	}
+}
+
+.main__subtitle {
+	background-color: $c-lightBlue;
+	color: white;
+	padding: .5rem;
+	margin-top: 2rem;
+}
+
+.main__index {
+	margin-bottom: ($spacing-unit * 1);
+	margin-top: ($spacing-unit * 1);
+}

@@ -1,0 +1,48 @@
+// =================
+
+.header__info {
+	text-align: center;
+	border-bottom: solid 1px $c-blue;
+	font-size: $small-font-size;
+	padding: ($spacing-unit / 4) 0;
+	width: 100%;
+	background-color: $c-blue;
+	color: white;
+}
+
+.header {
+	border-bottom: solid 1px $c-lightBlue;
+	padding: $spacing-unit 0;
+
+	@media screen and (min-width: $v-mobile-landscape) {
+		> div {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-end;
+		}
+	}
+}
+
+
+
+.header__logo {
+	display: block;
+	max-width: 95%;
+
+	@media screen and (min-width: $v-mobile-landscape) {
+		flex: 35%;
+	}
+
+	img {
+		display: block;
+	}
+}
+
+.header__nav {
+	margin-top: $spacing-unit;
+
+	@media screen and (min-width: $v-mobile-landscape) {
+		flex: 65%;
+		padding-left: 1rem;
+	}
+}
