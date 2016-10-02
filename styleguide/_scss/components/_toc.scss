@@ -1,6 +1,6 @@
 .sg-toc {
   color: $white;
-  background: lighten($black, 4%);
+  background: #23050B;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   
@@ -23,7 +23,7 @@
     display: block;
     
     color: transparentize($white, 0.5);
-    font-size: $h6-font-size;
+    font-size: 13px;
     font-weight: bold;
     text-decoration:none;
     padding: $small-spacing/3 0;
@@ -54,7 +54,7 @@
       }
     }
     .toc-head_title {
-      font-size: $h3-font-size;
+      font-size: $h4-font-size;
       margin-bottom: 0;
     }
   }
@@ -75,7 +75,7 @@
       a {
         padding: $small-spacing/2 $base-padding;
         font-weight: normal;
-        font-size: $base-font-size;
+        font-size: 13px;
         
         &:before {
           @extend .icon;

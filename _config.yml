@@ -11,9 +11,9 @@ sg_language: en
 sg_styles: /styleguide/css/styleguide.css
 sg_favicon: /styleguide/branding/favicon.ico
 # Enable sass to edit Styleguide Template Styles
-#sass:
-#  sass_dir: styleguide/_scss #[generate Styleguide styles]
-#  style: :compressed
+sass:
+  sass_dir: styleguide/_scss #[generate Styleguide styles]
+  style: :compressed
 
 # Preprocessor settings
 highlighter: rouge

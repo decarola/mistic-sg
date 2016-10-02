@@ -1,30 +1,53 @@
+$max-width:               1080px;
+$spacing-unit:            1.875rem;
+
+// Responsive viewports
+$v-mobile:                320px;
+$v-mobile-landscape:      550px;
+$v-tablet:                768px;
+$v-desktop:               960px;
 
 // Colors
+// Base color
+$bianco:                  #efefef;
+$ottanio:                 #508894;
+$grigio:                  #604B50;
 
-$c-lightBlue:     #8388F8;
-$c-blue:      #230E72;
-$c-white:       #fff;
+// Ottanio variants
+$ottanio-light-1:         $ottanio;
+$ottanio-light-2:         #7aacb7;
+$ottanio-light-3:         #abcbd2;
+$ottanio-light-4:         #ddeaed;
 
-$c-primary-teal: $c-lightBlue;
+// Grigio variants
+$grigio-light-1:          #23050B;
+$grigio-light-2:          $grigio;
+$grigio-light-3:          #978B8E;
+$grigio-light-4:          #D8D5D6;
 
-$text-color: 		#1b0627;
-$background-color: 	#fdfdfd;
+// Utility colors
+$c-border-color:          $grigio-light-3;
 
-$c-gray:			darken(#ddd, 20%);
-$c-light-gray:		lighten(#ddd, 5%);
-$c-dark-gray:		darken($c-gray, 20%);
+$c-bianco:                $bianco;
 
-// Fonts
-$base-font-family: 	'Roboto', sans-serif;
-$base-font-size: 	16px;
-$base-font-weight: 	400;
-$strong-font-weight:900;
-$small-font-size: 	$base-font-size * 0.875;
-$base-line-height: 	1.5;
-$spacing-unit: 		1.875rem;
+$c-grigio-chiaro:         $grigio-light-4;
+$c-grigio:                $grigio-light-3;
+$c-grigio-scuro:          $grigio-light-2;
+$c-nero:                  $grigio-light-1;
 
-// Layout and responsive viewports
-$v-mobile: 			320px;
-$v-mobile-landscape:550px;
-$v-tablet: 			768px;
-$v-desktop: 		960px;
+$c-primario:              $ottanio;
+$c-primario-chiaro:       $ottanio;
+$c-primario-chiarissimo:  $ottanio;
+$c-primario-superchiaro:  $ottanio;
+
+// Typography related
+$text-color:              $c-nero;
+$base-font-family:        'Roboto', sans-serif;
+
+$base-line-height:        1.5;
+$base-font-size:          16px;
+$small-font-size:         $base-font-size * 0.875;
+
+$base-font-weight:        400;
+$strong-font-weight:      900;
+

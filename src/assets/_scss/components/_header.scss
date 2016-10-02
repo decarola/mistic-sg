@@ -2,16 +2,16 @@
 
 .header__info {
 	text-align: center;
-	border-bottom: solid 1px $c-blue;
+	border-bottom: solid 1px $c-primario;
 	font-size: $small-font-size;
 	padding: ($spacing-unit / 4) 0;
 	width: 100%;
-	background-color: $c-blue;
+	background-color: $c-primario;
 	color: white;
 }
 
 .header {
-	border-bottom: solid 1px $c-lightBlue;
+	border-bottom: solid 1px $c-primario-chiarissimo;
 	padding: $spacing-unit 0;
 
 	@media screen and (min-width: $v-mobile-landscape) {

@@ -46,7 +46,7 @@ input[type='text'] {
   font-size: 1rem;
   line-height: $base-line-height  * 1rem;
   padding: 0.5rem;
-  border: solid 1px $c-gray;
+  border: solid 1px $c-border-color;
 
   @media screen and (min-width: $v-tablet) {
     min-width: 20rem;
@@ -96,7 +96,7 @@ label {
 }
 
 .field-note {
-  color: $c-light-gray;
+  color: $c-grigio-chiaro;
   display: block;
   margin-top: 0.4rem;
 

@@ -14,7 +14,7 @@ $icon: 'Ionicons';
 $code: monospace;
 
 //Base Fonts
-$base-font-size: 13px;
+$base-font-size: 16px;
 $base-line-height: 1.5;
 
 //Modular Scale
@@ -45,6 +45,7 @@ $emerald: #16b491;
 $green: #2f8a54;
 $gold: #efb543;
 $orange: #e26d32;
+$ottanio: #508894;
 $pink: #e270b4;
 $purple: #492e53;
 $grey: #a7a7a7;
@@ -60,8 +61,8 @@ $heading-font-color: #313131;
 $subheading-font-color: lighten($base-font-color, 12%);
 
 //Action-color
-$action-color: $blue;
-$action-hover-color: darken($action-color, 12%);
+$action-color: $ottanio;
+$action-hover-color: darken($ottanio, 12%);
 
 //Primary Color
 $primary-color: $red;

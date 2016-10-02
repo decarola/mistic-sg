@@ -9,7 +9,7 @@ colors:
     - name: $ottanio
       hex: '508894'
     - name: $grigio
-      hex: '230209' 
+      hex: '604B50' 
   - name: Varianti di ottone
     items:
     - name: $ottanio-light-1

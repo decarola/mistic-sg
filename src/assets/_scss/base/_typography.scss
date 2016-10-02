@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: $c-blue;
+  color: $c-primario;
 
   &:hover,
   &:focus {
@@ -26,6 +26,10 @@ a {
 
 p {
   margin-bottom: 1rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 em,
@@ -52,8 +56,7 @@ h6 {
   font-family: $base-font-family;
   font-weight: $strong-font-weight;
   letter-spacing: .2pt;
-  text-transform: uppercase;
-  color: $c-blue;
+  color: $c-primario;
 }
 
 h1,
@@ -64,20 +67,28 @@ h2 {
 h3,
 h4 {
   line-height: 1.3;
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: 300%;
-  margin: 3rem 0;
+  font-weight: 400;
+  margin: 3rem 0 2.5rem;
 
   @media screen and (min-width: $v-tablet) {
     margin: 2rem 0;
   }
+
+  &.page-title {
+    font-size: 340%;
+    font-weight: 100;
+  }
 }
 
 h2 {
-  font-size: 230%;
-  margin: 2rem 0;
+  font-size: 260%;
+  font-weight: 400;
+  margin: 2rem 0 1.5rem;
 }
 
 h3 {
@@ -87,10 +98,14 @@ h3 {
 
 h4 {
   font-size: 170%;
-  margin: .5rem 0;
+  margin: 1rem 0;
 }
 
 h5 {
   font-size: 120%;
-  margin: 0;
+  margin: 1rem 0;
+}
+
+h6 {
+  margin: .5rem 0;
 }

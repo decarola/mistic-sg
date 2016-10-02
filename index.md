@@ -1,10 +1,10 @@
 ---
 title: Panoramica
 layout: index
-info: Questa style guide è una raccolta ordinata e pulita di tutti gli elementi grafici e del codice che li implementa. Lo scopo è quello di riuscire a dare continuità e consistenza nel tempo all'interfaccia del Museo Virtuale di Informatica.
+info: Questa style guide è una raccolta di tutti gli elementi grafici e del codice che li implementa. Lo scopo è quello di riuscire a dare continuità e consistenza nel tempo all'interfaccia del Museo Virtuale di Informatica.
 ---
 
-![Styleguide]({{ site.baseurl }}/styleguide/images/cover.png)
+<h1 class="page-title">Style guide</h1>
 
 Questa è la style guide ufficiale del Museo Virtuale di Informatica, realizzata durante la stesura della tesi di laurea triennale da [Andrea De Carolis](http://decaro.la) con il [prof. Casadei](http://www.cs.unibo.it/casadei/) per il corso di _Storia dell'Informazione_ – [Dipartimento di Informarica, Scienza e Ingegneria](http://www.informatica.unibo.it/it) – [Università di Bologna](http://www.unibo.it).
 

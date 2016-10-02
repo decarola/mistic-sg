@@ -1,7 +1,7 @@
 .table-wrapper {
   width: 100%;
   overflow: auto;
-  border: 1px solid $c-blue;
+  border: 1px solid $c-primario;
 }
 
 table {
@@ -53,10 +53,10 @@ table {
 }
 
 thead {
-  border-bottom: 2px solid $c-dark-gray;
+  border-bottom: 2px solid $c-grigio-scuro;
 
   th {
-    color: $c-blue;
+    color: $c-primario;
     letter-spacing: .4pt;
     text-align: center;
     text-transform: uppercase;
@@ -67,17 +67,17 @@ tbody {
 
   tr {
     &:nth-of-type(odd) {
-      background-color: $c-light-gray;
+      background-color: $c-grigio-chiaro;
     }
   }
 }
 
 tfoot {
-  border-top: 2px solid $c-dark-gray;
+  border-top: 2px solid $c-grigio-scuro;
 
   th,
   td {
-    color: $c-blue;
+    color: $c-primario;
     letter-spacing: .4pt;
   }
 }

@@ -1,9 +1,9 @@
 
 %btn,
 .btn {
-  background-color: $c-primary-teal;
+  background-color: $c-primario;
   border-radius: 4px;
-  border: solid 2px $c-primary-teal;
+  border: solid 2px $c-primario;
   color: white;
   display: inline-block;
   padding: .7rem 1.2rem;
@@ -12,14 +12,14 @@
 
   &:hover,
   &:focus {
-    background-color: darken($c-primary-teal, 15%);
-    border-color: darken($c-primary-teal, 15%);
+    background-color: darken($c-primario, 15%);
+    border-color: darken($c-primario, 15%);
     text-decoration: none;
   }
 
   &:active {
-    background-color: lighten($c-primary-teal, 5%);
-    border-color: lighten($c-primary-teal, 5%);
+    background-color: lighten($c-primario, 5%);
+    border-color: lighten($c-primario, 5%);
   }
 
   &.disabled {
@@ -32,19 +32,19 @@
 %btn--outline,
 .btn--outline {
   background-color: white;
-  color: $c-primary-teal;
+  color: $c-primario;
 
   &:hover,
   &:focus {
     background-color: white;
-    border-color: $c-gray;
-    color: $c-gray;
+    border-color: $c-border-color;
+    color: $c-grigio-chiaro;
   }
 
   &:active {
     background-color: white;
-    border-color: $c-dark-gray;
-    color: $c-dark-gray;
+    border-color: $c-grigio-scuro;
+    color: $c-grigio-scuro;
   }
 }
 
@@ -63,9 +63,9 @@
 
 %btn--gray,
 .btn--gray {
-  background-color: $c-light-gray;
-  border-color: $c-light-gray;
-  color: $c-gray;
+  background-color: $c-grigio-chiaro;
+  border-color: $c-border-color;
+  color: $c-grigio;
 
   &:hover,
   &:focus {

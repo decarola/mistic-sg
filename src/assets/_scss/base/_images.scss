@@ -27,7 +27,7 @@ figure {
 figcaption {
   padding-top: 0.5rem;
   font-size: 0.8rem;
-  color: $c-gray;
+  color: $grigio-light-3;
 
   &:before {
     content: "📷";
@@ -49,9 +49,9 @@ figcaption {
 }
 
 .thumb__claim {
-  background-color: $c-dark-gray;
+  background-color: $c-grigio-scuro;
   bottom: 0;
-  color: $c-white;
+  color: $c-bianco;
   margin-bottom: 0;
   padding: 0.2rem;
   position: absolute;
