@@ -12,14 +12,18 @@ li {
   padding-left: 0;
 
   li {
-    margin-bottom: 2rem;
+    border-bottom: solid 1px $c-border-color;
+    margin-bottom: 0;
+  }
+}
 
-    @media screen and (min-width: $v-mobile) {
-      margin-bottom: 2.5rem;
-    }
+.list-feed__link {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
 
-    @media screen and (min-width: $v-mobile-landscape) {
-      margin-bottom: 3rem;
-    }
+  &:hover,
+  &:focus {
+    background-color: $c-grigio-chiaro;
   }
 }

@@ -4,41 +4,41 @@
   .grid-3,
   .grid-4 {
     width: 100%;
-    border: solid 1px red;
+    overflow: hidden;
   }
 
   .col {
     padding: .5rem;
     width: 50%;
     float: left;
+  }
 
-    .no-gutter > & {
-      padding: 0;
-    }
-     
-    .grid-3 > & {
-      width: 50%;
+  .no-gutter > .col {
+    padding: 0;
+  }
 
-      @media screen and (min-width: $v-mobile-landscape) {
-        width: 33.33%;
+  .grid-3 > .col {
+    width: 50%;
 
-        &.colspan-2 {
-          width: 66.66%;
-        }
+    @media screen and (min-width: $v-mobile-landscape) {
+      width: 33.33%;
+
+      &.colspan-2 {
+        width: 66.66%;
       }
     }
+  }
 
-    .grid-4 > & {
-      flex: 50%;
-      flex-grow: 1;
+  .grid-4 > .col {
+    flex: 50%;
+    flex-grow: 1;
 
-      @media screen and (min-width: $v-mobile-landscape) {
-        flex: 25%;
-        max-width: 25%;
+    @media screen and (min-width: $v-mobile-landscape) {
+      flex: 25%;
+      max-width: 25%;
 
-        &.colspan-2 {
-          flex: 50%;
-        }
+      &.colspan-2 {
+        flex: 50%;
       }
     }
   }
