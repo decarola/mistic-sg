@@ -1,23 +1,35 @@
 ---
-title: Color
-info: Colors used in this product.
+title: Colori
+info: Colori ufficiale e le varianti disponibili.
 colors: 
-  - name: base colors
+  - name: Colori base
     items:
-    - name: $white
+    - name: $bianco
       hex: 'efefef'
-    - name: $black
-      hex: '000000'
-    - name: $light-grey
-      hex: 'cccccc' 
-  - name: accents
+    - name: $ottanio
+      hex: '508894'
+    - name: $grigio
+      hex: '230209' 
+  - name: Varianti di ottone
     items:
-    - name: $blue
-      hex: '1e90ff'  
-      pretty: 'dodgerblue'
-    - name: $red
-      hex: 'ff6347'  
-      pretty: 'tomato'  
+    - name: $ottanio-light-1
+      hex: '508894'  
+    - name: $ottanio-light-2
+      hex: '7aacb7'  
+    - name: $ottanio-light-3
+      hex: 'abcbd2'  
+    - name: $ottanio-light-4
+      hex: 'ddeaed'  
+  - name: Varianti di grigio
+    items:
+    - name: $grigio-light-1
+      hex: '23050B'  
+    - name: $grigio-light-2
+      hex: '604B50'  
+    - name: $grigio-light-3
+      hex: '978B8E'  
+    - name: $grigio-light-4
+      hex: 'D8D5D6'  
 ---
 
 <section class="sg-branding">

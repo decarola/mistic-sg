@@ -1,29 +1,27 @@
 ---
-title: Overview
+title: Panoramica
 layout: index
-info: Organise design styles, create code standards, and maintain a consistent user interface design across your digital product with this boilerplate living styleguide. Made with the power of Jekyll.
+info: Questa style guide è una raccolta ordinata e pulita di tutti gli elementi grafici e del codice che li implementa. Lo scopo è quello di riuscire a dare continuità e consistenza nel tempo all'interfaccia del Museo Virtuale di Informatica.
 ---
 
 ![Styleguide]({{ site.baseurl }}/styleguide/images/cover.png)
 
-This styleguide can be freely customized, extended, published, and shared with designers, developers or clients. It is built using [Jekyll](http://jekyll.rb), and the design principles are based on the [Draft US Design Standards](https://standards.usa.gov/).
+Questa è la style guide ufficiale del Museo Virtuale di Informatica, realizzata durante la stesura della tesi di laurea triennale da [Andrea De Carolis](http://decaro.la) con il [prof. Casadei](http://www.cs.unibo.it/casadei/) per il corso di _Storia dell'Informazione_ – [Dipartimento di Informarica, Scienza e Ingegneria](http://www.informatica.unibo.it/it) – [Università di Bologna](http://www.unibo.it).
 
-The [Getting Started]({{ site.baseurl }}/docs/00-get-started/design-principles.html) pages have all the information you need to start using this tool.
+Viene generata usando [Jekyll](http://jekyll.rb), seguendo i principi del _[Draft US Design Standards](https://standards.usa.gov/)_ e sulla base di [livingstyleguide.cc](http://livingstyleguide.cc).
 
+Tutte le scelte progettuali, le tecniche e le pratiche sono descritte nella sopra citata tesi di laurea. Nell'attesa della pubblicazione dei sorgenti (della style, del sito e della tesi) nella prima parte della style guide c'è una sintesi degli stessi.
+
+Dopo la parte di introduzione vengono elencati tutti gli elementi che costituiscono il _front end_ del sito, raggruppati secondo un ottica di _atomic design_.
 ___
 
-#### License 
+I segueti progetti non sono rilasciati sotto la licenza XXX:
 
-**This tool was published in the public domain on 12 September 2016 by [Matthew Elsom](http://matthewelsom.com) © 2016 & Beyond. Last Update {{ site.time | date: "%b %-d, %Y"  }}. [License](https://github.com/matthewelsom/Living_Styleguide/blob/gh-pages/LICENSE)**
+- I file in `styleguide/fonts`, e `_scss/ionicons` sono parte di [Ionicons](http://ionicons.com/), copyright Ben Sperry.
+- I file in `_scss/vendor/bourbon` sono estratti da [Bourbon](http://bourbon.io/), copyright [thoughtbot](https://thoughtbot.com/), inc.
+- I file in `_scss/vendor/fontawesome`, e `src/assets/fonts` vengono da [Font Awesome](http://fontawesome.io/), copyright Dave Gandy.
+- I file in `_scss/normalize` vengono da [Normalize.css](https://github.com/necolas/normalize.css), copyright Nicolas Gallagher e Jonathan Neal.
+- Il file `js/jquery/jquery-2.1.4.min.js` is from [jQuery](https://jquery.com/), copyright The jQuery Foundation.
+- I file in `fonts/roboto` are extracted from [Google Fonts](https://fonts.google.com/specimen/Roboto), copyright Christian Robertson.
 
-A few parts of this project are not in the public domain:
-
-- The files in `styleguide/fonts`, and `_scss/ionicons` are extracted from [Ionicons](http://ionicons.com/), copyright Ben Sperry.
-- The files in `_scss/vendor/bourbon` are extracted from [Bourbon](http://bourbon.io/), copyright [thoughtbot](https://thoughtbot.com/), inc.
-- The files in `_scss/vendor/fontawesome`, and `src/assets/fonts` are from [Font Awesome](http://fontawesome.io/), copyright Dave Gandy.
-- The files in `_scss/normalize` are from [Normalize.css](https://github.com/necolas/normalize.css), copyright Nicolas Gallagher and Jonathan Neal.
-- The file `js/jquery/jquery-2.1.4.min.js` is from [jQuery](https://jquery.com/), copyright The jQuery Foundation.
-- The files in `fonts/open-sans` are extracted from [Google Fonts](https://fonts.google.com/specimen/Open+Sans), copyright Steve Matteson.
-- The files in `fonts/roboto` are extracted from [Google Fonts](https://fonts.google.com/specimen/Roboto), copyright Christian Robertson.
-
-**Please check with rights holders for license details.**
+***Si raccomanda di controllare con quale licenza siano stati rilasciati per maggiori dettagli.
