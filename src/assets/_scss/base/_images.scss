@@ -1,4 +1,4 @@
-// figure
+// figure and figcaption
 figure {
   display: inline-block;
   margin: 1rem 0;
@@ -10,17 +10,37 @@ figure {
   @media screen and (min-width: $v-mobile) {
     margin: 2rem 0;
   }
+}
 
   // when it's under a link
-  .figure-zoom > & {
-    position: relative;
-    &:hover:before {
-      content: "🔍";
-      position: absolute;
-      top: .5rem;
-      left: .5rem;
-      font-size: 2rem;
-    }
+.figure-zoom > figure {
+  position: relative;
+
+  &:hover:before,
+  &:focus:before {
+    content: "Espandi";
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+  }
+}
+
+.no-emoji,
+.no-js {
+  .figure-zoom > figure:hover:before,
+  .figure-zoom > figure:focus:before {
+    content: "Zoom";
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    background-color: $c-bianco;
+  }
+}
+
+.emoji {
+  .figure-zoom > figure:hover:before,
+  .figure-zoom > figure:focus:before {
+    font-size: 2rem;
+    content: "🔍";
   }
 }
 
@@ -30,31 +50,11 @@ figcaption {
   color: $grigio-light-3;
 
   &:before {
-    content: "📷";
     margin-right: 0.4rem;
+    content: "[nella foto]"
   }
-}
 
-// gallery thumb
-.thumb {
-  display: block;
-  position: relative;
-  overflow: hidden;
-
-  img {
-    max-width: 110%;
-    width: 110%;
-    margin-left: -5%;
+  .emoji &:before {
+    content: "📷";
   }
-}
-
-.thumb__claim {
-  background-color: $c-grigio-scuro;
-  bottom: 0;
-  color: $c-bianco;
-  margin-bottom: 0;
-  padding: 0.2rem;
-  position: absolute;
-  text-align: center;
-  width: 100%;
 }
