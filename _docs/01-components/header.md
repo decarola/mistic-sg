@@ -1,7 +1,6 @@
 ---
 title: Header
 scss: '/_scss/components/header.scss'
-maturity: alpha
 info: Header usually sits on  top of page
 ---
 

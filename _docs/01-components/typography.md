@@ -1,7 +1,6 @@
 ---
 title: Tipografia
 scss: '/_scss/components/buttons.scss'
-maturity: recommended
 info: Use buttons to signal actions.
 ---
 

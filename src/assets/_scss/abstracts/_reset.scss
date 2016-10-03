@@ -107,3 +107,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+// hr
+hr {
+  margin: 1.5rem 0;
+
+  @media screen and (min-width: $v-mobile-landscape) {
+    margin: 2rem 0;
+  }
+}

@@ -1,7 +1,6 @@
 ---
 title: Footer
 scss: '/_scss/components/footer.scss'
-maturity: alpha
 info: Footer usually stays on the bottom
 ---
 
