@@ -7,7 +7,7 @@ sg_version: 1.0
 sg_keywords: styleguide, playbook, design, code 
 sg_author: Matthew Elsom
 sg_description: This Living Styleguide maintains design and code standards for digital tools and services.
-sg_language: en
+sg_language: it
 sg_styles: /styleguide/css/styleguide.css
 sg_favicon: /styleguide/branding/favicon.ico
 # Enable sass to edit Styleguide Template Styles
@@ -30,7 +30,7 @@ version: VERSION
 keywords: KEYWORDS
 author: AUTHOR NAME
 description: DESCRIPTION
-language: en
+language: it
 baseurl: /mistic-sg
 destination: _site
 sass:

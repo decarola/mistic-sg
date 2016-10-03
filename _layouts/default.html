@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html id="sg" {% if site.sg_language %} lang="{{ site.sg_language }}"{% endif %}>
+ <html {% if site.sg_language %} lang="{{ site.sg_language }}"{% endif %}>
   <head>
     <meta charset="utf-8">
     <title>{% if page.sg_title %}{{ page.sg_title }} | {% endif %}{{ site.sg_title }}</title>
