@@ -1,3 +1,3 @@
 ---
-title: Pagina in evidenza - Home page
+title: Home page / evidenza
 ---

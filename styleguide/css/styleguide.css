@@ -2989,7 +2989,7 @@ helpers or functions. They have no direct output.
   font-style: normal;
   font-weight: bold;
   src: url("../fonts/open-sans/OpenSans-Bold.ttf") format("truetype"); }
-.icon, .sg-toc .toc-group li a:before {
+.icon, .sg-toc .toc-group li a:first-child:before {
   font-family: "Ionicons";
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -3272,10 +3272,11 @@ to a reusable component.
     list-style: none; }
   .sg-toc li {
     border-top: 1px solid #e5e5e5;
-    border-color: rgba(255, 255, 255, 0.2); }
+    border-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    padding: 0.16667rem 0; }
   .sg-toc a {
     text-transform: capitalize;
-    display: block;
     color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
     font-weight: bold;
@@ -3337,14 +3338,16 @@ to a reusable component.
     .sg-toc .toc-group li {
       border-top: none; }
       .sg-toc .toc-group li a {
-        padding: 0.25rem 1rem;
+        padding: 0.25rem 0;
         font-weight: normal;
         font-size: 13px; }
-        .sg-toc .toc-group li a:before {
+      .sg-toc .toc-group li a:first-child {
+        padding-left: 1rem; }
+        .sg-toc .toc-group li a:first-child:before {
           content: '\f3a6';
           display: inline-block;
           margin-right: 0.5rem; }
-        .sg-toc .toc-group li a.active:before {
+        .sg-toc .toc-group li a:first-child:first-child.active:before {
           content: '\f3a7'; }
 
 .sg-masthead {
@@ -3469,7 +3472,7 @@ a.sg-maximize-btn {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease; }
-  a.sg-maximize-btn .icon, a.sg-maximize-btn .sg-toc .toc-group li a:before, .sg-toc .toc-group li a.sg-maximize-btn a:before {
+  a.sg-maximize-btn .icon, a.sg-maximize-btn .sg-toc .toc-group li a:first-child:before, .sg-toc .toc-group li a.sg-maximize-btn a:first-child:before {
     font-size: 1.25rem; }
   a.sg-maximize-btn span {
     display: none;

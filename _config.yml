@@ -25,11 +25,11 @@ kramdown:
 port: 4000
 
 # Output settings
-title: STYLEGUIDE NAME
-version: VERSION
+title: Style guide del Museo Virtuale di Informatica - DISI Unibo
+version: 1.0
 keywords: KEYWORDS
-author: AUTHOR NAME
-description: DESCRIPTION
+author: Andrea De Carolis
+description: 
 language: it
 baseurl: /mistic-sg
 destination: _site

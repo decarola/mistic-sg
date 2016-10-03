@@ -17,10 +17,13 @@
   li {
     border-top: $base-border;
     border-color: transparentize($white, 0.8);
+    display: block; 
+    padding: $small-spacing/3 0;
+    // padding: $base-padding;
   }
   a {
     text-transform: capitalize;
-    display: block;
+    // display: block;
     
     color: transparentize($white, 0.5);
     font-size: 13px;
@@ -73,17 +76,19 @@
     li {
       border-top: none;
       a {
-        padding: $small-spacing/2 $base-padding;
+        padding: $small-spacing/2 0;
         font-weight: normal;
         font-size: 13px;
-        
+      }
+      a:first-child {
+        padding-left: $base-padding; 
         &:before {
           @extend .icon;
           content: '\f3a6';
           display: inline-block;
           margin-right: $small-spacing;
         }
-        &.active:before {
+        &:first-child.active:before {
           content: '\f3a7';
         }
       }

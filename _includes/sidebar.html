@@ -45,8 +45,9 @@
     <h6 class="toc-group_title">Template</h6>
     <ul>
       {% for example in examples %}
+      {% assign pattern_url = example.url | replace_first: 'docs', 'src/html' %} 
       <li> 
-        <a href="{{ site.baseurl }}{{ example.url }}"{% if example.url == page.url %} class="active"{% endif %}>{{ example.title }}</a>
+        <a href="{{ site.baseurl }}{{ example.url }}"{% if example.url == page.url %} class="active"{% endif %}>{{ example.title }}</a> (<a href="{{ site.baseurl }}{{ pattern_url }}" target="_blank">nuova pagina</a>)
       </li>
       {% endfor %}
     </ul>
