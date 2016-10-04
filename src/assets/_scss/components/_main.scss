@@ -1,5 +1,6 @@
 .main {
 	position: relative;
+	padding-bottom: 2rem;
 }
 
 .main__title {
@@ -20,4 +21,14 @@
 .main__index {
 	margin-bottom: ($spacing-unit * 1);
 	margin-top: ($spacing-unit * 1);
+}
+
+.main-thumb {
+	margin-bottom: 10px;
+	
+	@media screen and (min-width: $v-mobile-landscape) {
+		float: right;
+		max-width: 50%;
+		margin-left: 10px;
+	}
 }
