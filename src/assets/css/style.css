@@ -1,4 +1,7 @@
 @charset "UTF-8";
+img {
+  border: solid 2px red; }
+
 /*
 This file is used to contain all abstracts imports.
 Files inside this folder can contain abstract settings,
@@ -85,8 +88,10 @@ select[multiple] {
   vertical-align: top; }
 
 img {
+  width: 100%;
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  display: none !important; }
 
 hr {
   margin: 1.5rem 0; }
