@@ -27,3 +27,18 @@ li {
     background-color: $c-grigio-chiaro;
   }
 }
+
+.list-tags {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+
+  li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  a {
+    @extend %btn;
+  }
+}
