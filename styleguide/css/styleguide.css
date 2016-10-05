@@ -3261,7 +3261,7 @@ to a reusable component.
 .sg-toc {
   color: #fff;
   background: #23050B;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
   .sg-toc::-webkit-scrollbar {
     display: none; }
