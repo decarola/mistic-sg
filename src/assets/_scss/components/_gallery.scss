@@ -12,6 +12,8 @@
 }
 
 .gallery__thumb {
+  position: relative;
+
   .gallery > & {
     margin: 5px;
     height: 0;
@@ -25,6 +27,22 @@
     max-width: 50%;
     margin-right: 10px;
     margin-bottom: 10px;
+  }
+
+  .csstransforms .gallery > & {
+    background-color: white;
+    border: solid 1px $c-bianco;
+  }
+}
+
+.gallery__img {
+  .csstransforms & {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -5%;
+    width: 110%;
+    max-width: 110%;
   }
 }
 

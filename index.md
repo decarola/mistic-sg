@@ -6,10 +6,13 @@ info: Questa style guide è una raccolta di tutti gli elementi grafici e del cod
 
 Style guide ufficiale del Museo Virtuale di Informatica, realizzata durante la stesura della tesi di laurea triennale da [Andrea De Carolis](http://decaro.la) con il [prof. Casadei](http://www.cs.unibo.it/casadei/) per il corso di _Storia dell'Informazione_ – [Dipartimento di Informarica, Scienza e Ingegneria](http://www.informatica.unibo.it/it) – [Università di Bologna](http://www.unibo.it).
 
-Partendo da [livingstyleguide.cc](http://livingstyleguide.cc), viene generata tramite [Jekyll](http://jekyll.rb). I file SCSS sono organizzati secondo [questo modello](http://matthewelsom.com/blog/simple-scss-playbook.html).
+Partendo da [livingstyleguide.cc](http://livingstyleguide.cc), questa style guide viene generata tramite [Jekyll](http://jekyll.rb).
 
-Tutte le scelte progettuali, le tecniche e le pratiche sono descritte nella sopra citata tesi di laurea. Nell'attesa della pubblicazione dei sorgenti (della style, del sito e della tesi) nella prima parte della style guide c'è una sintesi degli stessi.
+È organizzata in tre parti:
 
-Dopo la parte di introduzione vengono elencati tutti gli elementi che costituiscono il _front end_ del sito, raggruppati secondo un ottica di _atomic design_.
+1. Nella prima parte vengono elencate le metodologie e * le scelte progettuali alla base del progetto*, con una breve spiegazione. 
+2. Successivamente vengono riportate le scelte di *identità grafica* (colori, logo) con alcuni esempi.
+3. Seguono poi i *singoli moduli* riportati insieme ad esempi di codice. Questi moduli andranno a formare i template dell'ultima sezione.
+4. I *template di riferimento* formati dai moduli sopra elencati.
 
 <small>Per informazioni sulle licenze si raccomanda di controllare le licenze delle singole librerie incluse.</small>
