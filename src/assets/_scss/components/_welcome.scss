@@ -1,39 +1,74 @@
+// .welcome
 .welcome {
-	@media screen and (min-width: $v-mobile-landscape) {
-		display: -ms-flex;
-		display: -webkit-flex;
-		display: flex;
-		-ms-flex-flow: row wrap;
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
-		align-items: -ms-flex-start;
-		align-items: -webkit-flex-start;
-		align-items: flex-start;
+
+	.no-flexbox &,
+	.no-js & {
+		@extend %clearfix;
+	}
+
+	.flexbox & {
+		@media screen and (min-width: $v-mobile-landscape) {
+			display: -ms-flex;
+			display: -webkit-flex;
+			display: flex;
+			-ms-flex-flow: row wrap;
+			-webkit-flex-flow: row wrap;
+			flex-flow: row wrap;
+			align-items: -ms-flex-start;
+			align-items: -webkit-flex-start;
+			align-items: flex-start;
+		}
 	}
 }
+
 .welcome__title {
 	font-size: 150%;
 	text-transform: none;
 	font-weight: 900;
 }
 
+// .welcome__abstract
 .welcome__abstract {
 
-	@media screen and (min-width: $v-mobile-landscape) {
-		-ms-flex: 1 60%;
-		-webkit-flex: 1 60%;
-		flex: 1 60%;
+	.no-flexbox &,
+	.no-js & {
+		float: left;
+		width: 60%;
+	}
+
+	.flexbox & {
+
+		@media screen and (min-width: $v-mobile-landscape) {
+			-ms-flex: 1 60%;
+			-webkit-flex: 1 60%;
+			flex: 1 60%;
+		}
 	}
 }
 
+// .welcome__mainimg
 .welcome__mainimg {
 	margin: $spacing-unit 0;
 
-	@media screen and (min-width: $v-mobile-landscape) {
-		-ms-flex: 2 40%;
-		-webkit-flex: 2 40%;
-		flex: 2 40%;
-		margin-top: 0;
-		padding-left: 1rem;
+	.no-flexbox &,
+	.no-js & {
+
+		@media screen and (min-width: $v-mobile-landscape) {
+			float: right;
+			width: 40%;
+			padding-left: 1rem;
+		}
+	}
+
+	.flexbox & {
+
+		@media screen and (min-width: $v-mobile-landscape) {
+			-ms-flex: 2 40%;
+			-webkit-flex: 2 40%;
+			flex: 2 40%;
+			margin-top: 0;
+			padding-left: 1rem;
+		}
 	}
 }
+

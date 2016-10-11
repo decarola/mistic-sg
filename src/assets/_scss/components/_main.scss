@@ -1,6 +1,10 @@
 .main {
 	position: relative;
 	padding-bottom: 2rem;
+
+	.no-cssremunit & {
+		padding-bottom: 32px;
+	}
 }
 
 .main__title {
@@ -8,6 +12,10 @@
 
 	.main__subtitle + & {
 		margin-top: 1rem;
+
+		.no-cssremunit & {
+			margin-top: 16px;
+		}
 	}
 }
 

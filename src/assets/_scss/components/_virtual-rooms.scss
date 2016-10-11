@@ -6,6 +6,11 @@
   a {
     color: white;
   }
+
+  .no-cssremunit & {
+    padding: 16px 0 24px;
+    margin: 32px auto -32px;
+  }
 }
 
 .virtual-rooms__title {
@@ -16,6 +21,22 @@
 
 .virtual-rooms__list {
   list-style: none;
+}
+
+.no-flexbox,
+.no-js {
+
+  .virtual-rooms__list {
+    @extend %clearfix;
+
+    @media screen and (min-width: $v-mobile-landscape) {
+
+      li {
+        width: 50%;
+        float: left;
+      }
+    }
+  }
 }
 
 .flexbox .virtual-rooms__list {

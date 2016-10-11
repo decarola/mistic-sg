@@ -1,4 +1,5 @@
 * {
+  -webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -116,5 +117,13 @@ hr {
 
   @media screen and (min-width: $v-mobile-landscape) {
     margin: 2rem 0;
+  }
+
+  .no-cssremunit & {
+    margin: 24px 0;
+
+    @media screen and (min-width: $v-mobile-landscape) {
+      margin: 32px 0;
+    }
   }
 }
