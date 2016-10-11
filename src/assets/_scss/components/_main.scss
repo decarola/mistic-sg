@@ -11,10 +11,10 @@
 	color: $c-primario;
 
 	.main__subtitle + & {
-		margin-top: 1rem;
+		margin-top: .5rem;
 
 		.no-cssremunit & {
-			margin-top: 16px;
+			margin-top: 8px;
 		}
 	}
 }
@@ -26,8 +26,14 @@
 	margin-top: 2rem;
 	font-size: 160%;
 	font-weight: normal;
+	display: inline-block;
 	text-transform: none;
 	margin: 24px 0 16px;
+
+	+ .page-title {
+		margin-top: 16px;
+		margin-top: 1rem;
+	}
 }
 
 .main__index {
