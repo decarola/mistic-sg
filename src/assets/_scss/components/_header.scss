@@ -16,10 +16,13 @@
 
 	@media screen and (min-width: $v-mobile-landscape) {
 		> div {
+			display: -ms-flex;
 			display: -webkit-flex;
 			display: flex;
+			-ms-flex-flow: row wrap;
 			-webkit-flex-flow: row wrap;
 			flex-flow: row wrap;
+			align-items: -ms-flex-end;
 			align-items: -webkit-flex-end;
 			align-items: flex-end;
 		}
@@ -30,9 +33,11 @@
 
 .header__logo {
 	display: block;
-	max-width: 95%;
+	max-width: 60%;
 
 	@media screen and (min-width: $v-mobile-landscape) {
+		max-width: 30%;
+		-ms-flex: 35%;
 		-webkit-flex: 35%;
 		flex: 35%;
 	}
@@ -46,6 +51,7 @@
 	margin-top: $spacing-unit;
 
 	@media screen and (min-width: $v-mobile-landscape) {
+		-ms-flex: 65%;
 		-webkit-flex: 65%;
 		flex: 65%;
 		padding-left: 1rem;

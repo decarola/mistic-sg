@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+  transition: all 0.1s ease;
 }
 
 // HTML5 new elements declaration
@@ -104,7 +105,7 @@ select[multiple] {
 
 // images
 img {
-  width: 100%;
+  // width: 100%;
   max-width: 100%;
   height: auto;
 }

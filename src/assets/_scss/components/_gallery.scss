@@ -4,10 +4,22 @@
   display: block;
   overflow: hidden;
   opacity: .95;
+  text-decoration: none;
+  position: relative;
+  background-color: white;
 
   &:hover,
   &:focus {
     opacity: 1;
+  }
+
+  .csstransforms &:hover,
+  .csstransforms &:focus {
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    z-index: 999;
+    box-shadow: 0 0 2px $c-grigio-scuro;
   }
 }
 
@@ -39,6 +51,8 @@
   .csstransforms & {
     position: absolute;
     top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     left: -5%;
     width: 110%;

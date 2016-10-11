@@ -21,12 +21,15 @@
 .flexbox .virtual-rooms__list {
 
   @media screen and (min-width: $v-mobile-landscape) {
+    display: -ms-flex;
     display: -webkit-flex;
     display: flex;
+    -ms-flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
 
     li {
+      -ms-flex: 50%;
       -webkit-flex: 50%;
       flex: 50%;
     }

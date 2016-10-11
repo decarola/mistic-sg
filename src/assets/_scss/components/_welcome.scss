@@ -1,9 +1,12 @@
 .welcome {
 	@media screen and (min-width: $v-mobile-landscape) {
+		display: -ms-flex;
 		display: -webkit-flex;
 		display: flex;
+		-ms-flex-flow: row wrap;
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
+		align-items: -ms-flex-start;
 		align-items: -webkit-flex-start;
 		align-items: flex-start;
 	}
@@ -17,6 +20,7 @@
 .welcome__abstract {
 
 	@media screen and (min-width: $v-mobile-landscape) {
+		-ms-flex: 1 60%;
 		-webkit-flex: 1 60%;
 		flex: 1 60%;
 	}
@@ -26,6 +30,7 @@
 	margin: $spacing-unit 0;
 
 	@media screen and (min-width: $v-mobile-landscape) {
+		-ms-flex: 2 40%;
 		-webkit-flex: 2 40%;
 		flex: 2 40%;
 		margin-top: 0;
