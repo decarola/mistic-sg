@@ -8,6 +8,7 @@
   position: relative;
   width: 100%;
   background: $white;
+  height: 100vh;
 }
 #sg-viewport-size {
   @include position(absolute, -.75rem null null 50%);
